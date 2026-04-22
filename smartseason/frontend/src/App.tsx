@@ -10,13 +10,6 @@ const ProtectedRoute: React.FC<{ children: React.ReactNode }> = ({ children }) =
   return <>{children}</>;
 };
 
-const AdminRoute: React.FC<{ children: React.ReactNode }> = ({ children }) => {
-  const { user } = useAuth();
-  if (!user) return <Navigate to="/login" replace />;
-  if (user.role !== 'ADMIN') return <Navigate to="/" replace />;
-  return <>{children}</>;
-};
-
 function App() {
   return (
     <AuthProvider>
