@@ -2,6 +2,11 @@
 
 A web application for tracking crop progress across multiple fields during a growing season. Coordinators manage fields and monitor agent activity; field agents log stage updates and observations on their assigned fields.
 
+## Live Demo
+
+- **Frontend**: https://test-22ch.vercel.app
+- **Backend API**: https://mkulimasmart.onrender.com
+
 ## Tech Stack
 
 - **Backend**: Node.js with Express and TypeScript. Express was chosen for its straightforward request handling without the overhead of a larger framework.
